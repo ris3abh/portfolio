@@ -13,12 +13,13 @@ const Gray = ({ children }) => <span style={{ color: '#909090' }}>{children}</sp
 
 function App() {
   return (
-    <Parallax pages={3}>
+    <Parallax pages={4}>
         <ParallaxLayer offset={1} speed={1} style={{ backgroundColor: '#805E73' }} />
         <ParallaxLayer offset={2} speed={1} style={{ backgroundColor: '#87BCDE' }} />
+        <ParallaxLayer offset={3} speed={1} style={{ backgroundColor: '#805E73' }} />
         <ParallaxLayer offset={0} speed={0} factor={3} style={{ backgroundImage: url('stars', true), backgroundSize: 'cover'}} />
         <ParallaxLayer offset={1.3} speed={-0.3} style={{ pointerEvents: 'none' }}>
-          <img src={url('satellite4')} style={{ width: '30%', marginLeft: '70%' }} />
+          <h1 style={{ width: '30%', marginLeft: '70%' }}>some image here</h1>
         </ParallaxLayer>
         <ParallaxLayer offset={1} speed={0.8} style={{ opacity: 0.1 }}>
           <img src={url('cloud')} style={{ display: 'block', width: '20%', marginLeft: '55%' }} />
@@ -42,7 +43,7 @@ function App() {
           <img src={url('cloud')} style={{ display: 'block', width: '15%', marginLeft: '75%' }} />
         </ParallaxLayer>
         <ParallaxLayer offset={2.5} speed={-0.4} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none' }}>
-          <img src={url('earth')} style={{ width: '60%' }} />
+          <h1>some image here</h1>
         </ParallaxLayer>
 
         <ParallaxLayer
@@ -51,7 +52,6 @@ function App() {
           style={{
             backgroundSize: '80%',
             backgroundPosition: 'center',
-            backgroundImage: url('clients', true)
           }}
         />
         <ParallaxLayer
@@ -59,7 +59,7 @@ function App() {
           speed={0.1}
           onClick={() => this.parallax.scrollTo(1)}
           style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <h1>Hello</h1>
+          <h1>Hello1</h1>
         </ParallaxLayer>
 
         <ParallaxLayer
@@ -67,7 +67,7 @@ function App() {
           speed={0.1}
           onClick={() => this.parallax.scrollTo(2)}
           style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <img src={url('bash')} style={{ width: '30%' }} />
+          <h1>Hello2</h1>
         </ParallaxLayer>
 
         <ParallaxLayer
@@ -75,7 +75,15 @@ function App() {
           speed={-0}
           style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
           onClick={() => this.parallax.scrollTo(0)}>
-          <img src={url('clients-main')} style={{ width: '30%' }} />
+          <h1>Hello3</h1>
+        </ParallaxLayer>
+
+        <ParallaxLayer
+          offset={3}
+          speed={-0}
+          style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+          onClick={() => this.parallax.scrollTo(0)}>
+          <h1>Hello4</h1>
         </ParallaxLayer>
       </Parallax>
 
