@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import ReactDOM from 'react-dom';
 import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
+import Triangular from './images/triangular.svg';
 
 const url = (name, wrap = false) => `${wrap ? 'url(' : ''}https://awv3node-homepage.surge.sh/build/assets/${name}.svg${wrap ? ')' : ''}`
 const Pink = ({ children }) => <span style={{ color: '#FF6AC1' }}>{children}</span>
@@ -14,36 +15,36 @@ const Gray = ({ children }) => <span style={{ color: '#909090' }}>{children}</sp
 function App() {
   return (
     <Parallax pages={4}>
-        <ParallaxLayer offset={1} speed={1} style={{ backgroundColor: '#805E73' }} />
-        <ParallaxLayer offset={2} speed={1} style={{ backgroundColor: '#87BCDE' }} />
-        <ParallaxLayer offset={3} speed={1} style={{ backgroundColor: '#805E73' }} />
-        <ParallaxLayer offset={0} speed={0} factor={3} style={{ backgroundImage: url('stars', true), backgroundSize: 'cover'}} />
+        <ParallaxLayer offset={1} speed={1} style={{ backgroundColor: '#131313' }} />
+        <ParallaxLayer offset={2} speed={1} style={{ backgroundColor: '#131313' }} />
+        <ParallaxLayer offset={3} speed={1} style={{ backgroundColor: '#131313' }} />
+        <ParallaxLayer offset={0} speed={0} factor={4} style={{ backgroundColor: '#131313' }} />
         <ParallaxLayer offset={1.3} speed={-0.3} style={{ pointerEvents: 'none' }}>
-          <h1 style={{ width: '30%', marginLeft: '70%' }}>some image here</h1>
+          <h1 style={{ width: '30%', marginLeft: '70%', color:"#fff"}}>some image website</h1>
         </ParallaxLayer>
         <ParallaxLayer offset={1} speed={0.8} style={{ opacity: 0.1 }}>
-          <img src={url('cloud')} style={{ display: 'block', width: '20%', marginLeft: '55%' }} />
-          <img src={url('cloud')} style={{ display: 'block', width: '10%', marginLeft: '15%' }} />
+          <img src={Triangular} style={{ display: 'block', width: '20%', marginLeft: '55%' }} />
+          <img src={Triangular} style={{ display: 'block', width: '10%', marginLeft: '15%' }} />
         </ParallaxLayer>
         <ParallaxLayer offset={1.75} speed={0.5} style={{ opacity: 0.1 }}>
-          <img src={url('cloud')} style={{ display: 'block', width: '400%', marginLeft: '70%' }} />
-          <img src={url('cloud')} style={{ display: 'block', width: '30%', marginLeft: '40%' }} />
+          <img src={Triangular} style={{ display: 'block', width: '400%', marginLeft: '70%' }} />
+          <img src={Triangular} style={{ display: 'block', width: '30%', marginLeft: '40%' }} />
         </ParallaxLayer>
         <ParallaxLayer offset={1} speed={0.2} style={{ opacity: 0.2 }}>
-          <img src={url('cloud')} style={{ display: 'block', width: '20%', marginLeft: '10%' }} />
-          <img src={url('cloud')} style={{ display: 'block', width: '30%', marginLeft: '75%' }} />
+          <img src={Triangular} style={{ display: 'block', width: '20%', marginLeft: '10%' }} />
+          <img src={Triangular} style={{ display: 'block', width: '30%', marginLeft: '75%' }} />
         </ParallaxLayer>
         <ParallaxLayer offset={1.6} speed={-0.1} style={{ opacity: 0.4 }}>
-          <img src={url('cloud')} style={{ display: 'block', width: '20%', marginLeft: '60%' }} />
-          <img src={url('cloud')} style={{ display: 'block', width: '35%', marginLeft: '30%' }} />
-          <img src={url('cloud')} style={{ display: 'block', width: '40%', marginLeft: '80%' }} />
+          <img src={Triangular} style={{ display: 'block', width: '20%', marginLeft: '60%' }} />
+          <img src={Triangular} style={{ display: 'block', width: '35%', marginLeft: '30%' }} />
+          <img src={Triangular} style={{ display: 'block', width: '40%', marginLeft: '80%' }} />
         </ParallaxLayer>
         <ParallaxLayer offset={2.6} speed={0.4} style={{ opacity: 0.6 }}>
-          <img src={url('cloud')} style={{ display: 'block', width: '20%', marginLeft: '5%' }} />
-          <img src={url('cloud')} style={{ display: 'block', width: '15%', marginLeft: '75%' }} />
+          <img src={Triangular} style={{ display: 'block', width: '20%', marginLeft: '5%' }} />
+          <img src={Triangular} style={{ display: 'block', width: '15%', marginLeft: '75%' }} />
         </ParallaxLayer>
         <ParallaxLayer offset={2.5} speed={-0.4} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none' }}>
-          <h1>some image here</h1>
+          <h1 style={{color: "#fff"}}>some image here</h1>
         </ParallaxLayer>
 
         <ParallaxLayer
@@ -59,7 +60,7 @@ function App() {
           speed={0.1}
           onClick={() => this.parallax.scrollTo(1)}
           style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <h1>Hello1</h1>
+          <h1 style={{color: "#fff"}}>Hello1</h1>
         </ParallaxLayer>
 
         <ParallaxLayer
@@ -67,7 +68,7 @@ function App() {
           speed={0.1}
           onClick={() => this.parallax.scrollTo(2)}
           style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <h1>Hello2</h1>
+          <h1 style={{color: "#fff"}}>Hello2</h1>
         </ParallaxLayer>
 
         <ParallaxLayer
@@ -75,15 +76,15 @@ function App() {
           speed={-0}
           style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
           onClick={() => this.parallax.scrollTo(0)}>
-          <h1>Hello3</h1>
+          <h1 style={{color: "#fff"}}>Hello3</h1>
         </ParallaxLayer>
 
         <ParallaxLayer
           offset={3}
           speed={-0}
           style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
-          onClick={() => this.parallax.scrollTo(0)}>
-          <h1>Hello4</h1>
+          onClick={() => this.parallax.scrollTo(3)}>
+          <h1 style={{color: "#fff"}}>Hello4</h1>
         </ParallaxLayer>
       </Parallax>
 
