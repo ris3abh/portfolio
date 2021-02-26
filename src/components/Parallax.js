@@ -4,7 +4,6 @@ import Cube from '../images/cube.svg';
 import Triangular from '../images/triangular.svg';
 import Hero from './Hero'
 
-const url = (name, wrap = false) => `${wrap ? 'url(' : ''}https://awv3node-homepage.surge.sh/build/assets/${name}.svg${wrap ? ')' : ''}`
 const Pink = ({ children }) => <span style={{ color: '#FF6AC1' }}>{children}</span>
 const Yellow = ({ children }) => <span style={{ color: '#EFF59B' }}>{children}</span>
 const Lightblue = ({ children }) => <span style={{ color: '#9AEDFE' }}>{children}</span>
