@@ -3,7 +3,15 @@ import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
 import Cube from '../../images/cube.svg';
 import Triangular from '../../images/triangular.svg';
 import Logo from '../../images/Logo.jpeg';
-import Hero from '../hero/Hero'
+import Hero from '../hero/Hero';
+import Contact from '../contactme/ContactUs';
+import About from '../aboutme/AboutMe';
+import Project from '../projects/Project';
+import Skills from '../skills/Skills';
+import Social from '../socialmed/SocialMedia';
+import Work from '../workexp/WorkExp';
+import Education from '../education/Education';
+import './style.css';
 
 const Pink = ({ children }) => <span style={{ color: '#FF6AC1' }}>{children}</span>
 const Yellow = ({ children }) => <span style={{ color: '#EFF59B' }}>{children}</span>
@@ -75,35 +83,35 @@ const ParallaxCont = () => {
           offset={0.7}
           speed={0.1}
           style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <h1 style={{color: '#fff'}}>Education Timeline</h1>
+          <Education />
         </ParallaxLayer>
 
         <ParallaxLayer
           offset={1.4}
           speed={-0}
           style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <h1 style={{color: '#fff'}}>Skills Animation</h1>
+          <Skills />
         </ParallaxLayer>
 
         <ParallaxLayer
           offset={2.1}
           speed={-0}
           style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <h1 style={{color: '#fff'}}>Work Experiences Timeline</h1>
+          <Work />
         </ParallaxLayer>
 
         <ParallaxLayer
           offset={2.8}
           speed={-0}
           style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <h1 style={{color: '#fff'}}>Work Projects Carousel</h1>
+          <Project />
         </ParallaxLayer>
 
         <ParallaxLayer
           offset={3.4}
           speed={-0}
           style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <h1 style={{color: '#fff'}}>Social Media Icons and Email address</h1>
+          <Social />
         </ParallaxLayer>
       </Parallax>
   );
