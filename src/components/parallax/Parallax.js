@@ -1,8 +1,9 @@
 import React from 'react';
 import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
-import Cube from '../images/cube.svg';
-import Triangular from '../images/triangular.svg';
-import Hero from './Hero'
+import Cube from '../../images/cube.svg';
+import Triangular from '../../images/triangular.svg';
+import Logo from '../../images/Logo.jpeg';
+import Hero from '../hero/Hero'
 
 const Pink = ({ children }) => <span style={{ color: '#FF6AC1' }}>{children}</span>
 const Yellow = ({ children }) => <span style={{ color: '#EFF59B' }}>{children}</span>
@@ -29,7 +30,7 @@ const ParallaxCont = () => {
           <img src={Triangular} style={{ display: 'block', width: '10%', marginLeft: '15%' }} />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={1.75} speed={0.5} style={{ opacity: 0.1 }}>
+        <ParallaxLayer offset={1.75} speed={0.5} style={{ opacity: 0.1   }}>
           <img src={Triangular} style={{ display: 'block', width: '20%', marginLeft: '70%' }} />
           <img src={Triangular} style={{ display: 'block', width: '20%', marginLeft: '40%' }} />
         </ParallaxLayer>
@@ -51,7 +52,7 @@ const ParallaxCont = () => {
         </ParallaxLayer>
 
         <ParallaxLayer offset={2.2} speed={-0.4} style={{opacity: 0.7 ,display: 'flex', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none' }}>
-          <img src={Cube} style={{ width: '30%' }} />
+          <img src={Logo} style={{ width: '10%' }} />
         </ParallaxLayer>
 
         <ParallaxLayer
