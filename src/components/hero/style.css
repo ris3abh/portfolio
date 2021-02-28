@@ -1,0 +1,62 @@
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu,
+    roboto, noto, segoe ui, arial, sans-serif;
+  background: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+#root {
+  overflow: hidden;
+  background: #f0f0f0;
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+  position: absolute;
+  border-radius: 2px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  will-change: transform;
+}
+
+.card1 {
+  min-width: 30ch;
+  min-height: 30ch;
+  width: 25vw;
+  height: 25vw;
+  max-width: 50ch;
+  max-height: 50ch;
+  background-image: url(../../images/graph.svg);
+}
+
+.card4 {
+  width: 15ch;
+  height: 15ch;
+  background-image: url(../../images/python.svg);
+}
+
+.container {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
